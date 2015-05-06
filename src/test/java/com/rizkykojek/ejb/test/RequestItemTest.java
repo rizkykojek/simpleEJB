@@ -11,12 +11,10 @@ import com.rizkykojek.ejb.bean.RequestItemStateless;
 import com.rizkykojek.ejb.bean.RequestItemStatelessRemote;
 
 public class RequestItemTest {
-
-	private static Context ctx;
 	
 	public static void main(String[] args) {	
 		try {
-			ctx =  ContextUtility.getInitialContext();
+			Context ctx =  ContextUtility.getInitialContext();
 			singletonTest(ctx);
 			statelessTest(ctx);
 			statefulTest(ctx);
