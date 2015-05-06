@@ -76,10 +76,7 @@
 			<plugin>
                 <groupId>org.wildfly.plugins</groupId>
                 <artifactId>wildfly-maven-plugin</artifactId>
-                <version>${version.wildfly.plugin}</version>
-                <configuration>
-					<filename>${project.build.finalName}.jar</filename>
-				</configuration>                
+                <version>${version.wildfly.plugin}</version>              
             </plugin>
             
 			<!-- Compiler plugin enforces Java 1.7 compatibility and activates annotation processors -->
@@ -103,5 +100,5 @@
 			</plugin>
 		</plugins>
 	</build>
-	<packaging>ejb</packaging>
+	<packaging>war</packaging>
 </project>
